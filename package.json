@@ -4,12 +4,16 @@
   "main": "index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production npx tailwindcss -i ./src/input.css -o ./docs/css/output.css",
-    "dev" : "npx tailwindcss -i ./src/input.css -o ./docs/css/output.css --watch"
+    "dev": "npx tailwindcss -i ./src/input.css -o ./docs/css/output.css --watch"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "daisyui": "^4.12.23",
     "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "taos": "^1.0.5"
   }
 }
