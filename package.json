@@ -1,10 +1,10 @@
 {
-  "name": "belajar-tailwind",
+  "name": "my-porto",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production npx tailwindcss -i ./src/input.css -o ./public/css/output.css",
-    "dev" : "npx tailwindcss -i ./src/input.css -o ./public/css/output.css --watch"
+    "build": "cross-env NODE_ENV=production npx tailwindcss -i ./src/input.css -o ./docs/css/output.css",
+    "dev" : "npx tailwindcss -i ./src/input.css -o ./docs/css/output.css --watch"
   },
   "author": "",
   "license": "ISC",
