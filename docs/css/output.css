@@ -1338,6 +1338,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   margin-top: 0.5rem;
 }
 
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
 .block {
   display: block;
 }
@@ -1374,17 +1378,16 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   max-width: 80rem;
 }
 
+.max-w-full {
+  max-width: 100%;
+}
+
 .max-w-lg {
   max-width: 32rem;
 }
 
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.translate-x-\[100\%\] {
-  --tw-translate-x: 100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1426,6 +1429,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   row-gap: 2.5rem;
 }
 
+.self-end {
+  align-self: flex-end;
+}
+
 .self-center {
   align-self: center;
 }
@@ -1436,6 +1443,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
 }
 
 .bg-gradient-to-tr {
@@ -1461,8 +1472,9 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   padding: 2.5rem;
 }
 
-.p-2 {
-  padding: 0.5rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-5 {
@@ -1563,10 +1575,6 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.opacity-0 {
-  opacity: 0;
-}
-
 .opacity-10 {
   opacity: 0.1;
 }
@@ -1584,16 +1592,8 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   transition-delay: 0ms !important;
 }
 
-.delay-\[300ms\] {
-  transition-delay: 300ms;
-}
-
 .\!duration-\[0ms\] {
   transition-duration: 0ms !important;
-}
-
-.duration-\[600ms\] {
-  transition-duration: 600ms;
 }
 
 @media (min-width: 640px) {
@@ -1675,28 +1675,5 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   .lg\:py-56 {
     padding-top: 14rem;
     padding-bottom: 14rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .xl\:max-w-lg {
-    max-width: 32rem;
-  }
-}
-
-@media (min-width: 1536px) {
-  .\32xl\:origin-bottom {
-    transform-origin: bottom;
-  }
-
-  .\32xl\:scale-110 {
-    --tw-scale-x: 1.1;
-    --tw-scale-y: 1.1;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 }
