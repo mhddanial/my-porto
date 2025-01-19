@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="night">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,9 +13,8 @@
         }
         .animate-scroll {
             animation: scroll 2s infinite
-              linear forwards alternate;
+            linear forwards alternate;
         }
-
         @keyframes scroll {
             from {
                 transform: translateX(-100%);
@@ -28,11 +27,44 @@
     </style>
     <script>document.documentElement.classList.add('js')</script>
 </head>
-    <body data-theme="night">
-        <!-- Navbar -->
+    <body>
+        <!-- scroll -->
         <div
             id="scroll-progress"
-            class="bg-success h-2 fixed end-0 left-0 z-50">
+            class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-2 fixed end-0 left-0 z-50">
+        </div>
+        <!-- Navbar -->
+        <div class="top-0 py-1 lg:py-2 w-full bg-transparent lg:relative z-50 fixed">
+            <nav class="z-10 fixed max-w-4xl xl:max-w-5xl py-2.5 lg:border-none lg:py-4">
+                <div class="flex items-center justify-between">
+                    <div class="navbar-start">
+                        <h2 class="font-bold text-2xl">Dann.</h2>
+                    </div>
+                    <div class="navbar-center lg:block">
+                        <ul class="flex space-x-10 text-base font-bold text-black/60 dark:text-white">
+                            <li
+                                class="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear">
+                                <a href="#">Home</a>
+                            </li>
+                            <li
+                                class="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear">
+                                <a href="#">Our services</a>
+                            </li>
+                            <li
+                                class="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear">
+                                <a href="#">About</a>
+                            </li>
+                            <li
+                                class="hover:underline hover:underline-offset-4 hover:w-fit transition-all duration-100 ease-linear">
+                                <a href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end hidden lg:flex">
+                        <button class="flex items-center justify-center rounded-md bg-[#4A3BFF] text-white px-6 py-2.5 font-semibold hover:shadow-lg hover:drop-shadow transition duration-200">Login</button>
+                    </div>
+                </div>
+            </nav>
         </div>
         <!-- Background -->
         <div class="relative isolate px-6 lg:px-8">
@@ -40,13 +72,13 @@
                 <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-10 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
             </div>
             <!-- Hero Section -->
-            <section id="hero" class="pt-32">
+            <section id="hero" class="pt-10">
                 <div class="container">
                     <div class="flex flex-wrap">  
-                        <div class="w-full self-center px-5 lg:w-1/2">
-                            <h1 class="text-base font-semibold text-success md:text-xl">Hello Everyone👋 I am <span class="block font-bold text-white text-4xl mt-2 lg:text-5xl">Muhammad Danial</span></h1>
-                            <h2 class="font-medium text-slate-400 text-lg mb-5 lg:text-2xl">Informatics Engineering Student.</h2>
-                            <p class="text-base leading-relaxed">I am a student majoring in informatics engineering who is currently studying at <span class="font-semibold text-white font-serif">Polytechnic Negeri Batam.</span>
+                        <div class="w-full self-center px-5 lg:w-1/2 md:w-1/2">
+                            <h1 class="text-base font-semibold text-success md:text-xl">Hello Everyone👋 I am <span class="block font-bold text-white text-3xl mt-2 lg:text-4xl">Muhammad Danial</span></h1>
+                            <h2 class="font-medium text-slate-400 text-md mb-5 lg:text-lg">Informatics Engineering Student.</h2>
+                            <p class="text-base leading-relaxed md:text-md">I am a student majoring in informatics engineering who is currently studying at <span class="font-semibold text-white font-serif">Polytechnic Negeri Batam.</span>
                                 I have a good interest and ability in the technology industry in the field of <span class="font-semibold text-warning">Networking</span> and <span class="text-accent font-semibold">Apps Programming.</span></p>
                             <div class="flex">
                                 <a href="#" class="btn btn-success mt-5 rounded-full">
@@ -55,12 +87,12 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="w-full self-end px-4 lg:w-1/2">
-                            <div class="relative mt-10 lg:mt-9 lg:right-0">
-                                <img src="../docs/img/hero.png" alt="Gambar" class="max-w-full mx-auto">
-                                <span class="absolute -bottom-10 -z-10 left-1/2 -translate-x-1/2">
+                        <div class="w-full self-end px-4 lg:w-1/2 md:w-1/2">
+                            <div class="relative mt-14 lg:mt-9 lg:right-0">
+                                <img src="../docs/img/hero.png" alt="Gambar" class="max-w-full mx-auto rounded-box">
+                                <span class="absolute -bottom-10 -z-10 left-1/2 -translate-x-1/2 lg:scale-100 lg:-bottom-0 md:scale-75 2xl:scale-150">
                                     <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#37CDBE" d="M52.7,-42.6C67.5,-23.5,78.1,-1.6,73.6,16.2C69,34,49.3,47.7,29.5,54.7C9.7,61.7,-10.2,62.1,-26.6,54.5C-43.1,46.9,-56.1,31.3,-63.7,10.9C-71.2,-9.6,-73.4,-34.9,-61.8,-53.3C-50.3,-71.7,-25.2,-83.3,-3.1,-80.8C18.9,-78.3,37.9,-61.8,52.7,-42.6Z" transform="translate(100 100) scale(1.1)" />
+                                        <path fill="#37CDBE" d="M52.7,-42.6C67.5,-23.5,78.1,-1.6,73.6,16.2C69,34,49.3,47.7,29.5,54.7C9.7,61.7,-10.2,62.1,-26.6,54.5C-43.1,46.9,-56.1,31.3,-63.7,10.9C-71.2,-9.6,-73.4,-34.9,-61.8,-53.3C-50.3,-71.7,-25.2,-83.3,-3.1,-80.8C18.9,-78.3,37.9,-61.8,52.7,-42.6Z" transform="translate(100 100) scale(0.9)" />
                                     </svg>
                                 </span>
                             </div>
@@ -68,23 +100,7 @@
                     </div>
                 </div>
             </section> 
-            <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-                <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-                    <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
-                </div>
-            </div>
-            <div class="py-24 sm:py-32">
-                <div class="mx-auto max-w-7xl px-6 lg:px-8 text-base-content">
-                    <h2 class="text-center text-lg/8 font-semibold">Trusted by the world’s most innovative teams</h2>
-                    <div class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-                        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor" width="158" height="48">
-                        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform" width="158" height="48">
-                        <img class="col-span-2 max-h-12 w-full object-contain lg:col-span-1" src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" width="158" height="48">
-                        <img class="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1" src="./icon/gmail-icone-logo.svg" alt="Gmail" width="158" height="48">
-                        <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1" src="https://tailwindui.com/plus/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158" height="48">
-                    </div>
-                </div>
-            </div>       
+            
         </div>
         <footer class="footer footer-center text-base-content rounded p-10">
             <nav class="grid grid-flow-col gap-4">
@@ -97,16 +113,17 @@
                 <p>Copyright © 2025 - All right reserved by Dann.</p>
                 </aside>
         </footer>
+        
     <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
     <script>
         window.addEventListener("scroll", function () {
-    const scrollableHeight =
-      document.documentElement.scrollHeight - window.innerHeight;
-    const scrolled = window.scrollY;
-    const progressBar = document.getElementById("scroll-progress");
-    const progress = (scrolled / scrollableHeight) * 100;
-    progressBar.style.width = progress + "%";
-  });
+        const scrollableHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+        const scrolled = window.scrollY;
+        const progressBar = document.getElementById("scroll-progress");
+        const progress = (scrolled / scrollableHeight) * 100;
+        progressBar.style.width = progress + "%";
+    });
     </script>
 </body>
 </html>
