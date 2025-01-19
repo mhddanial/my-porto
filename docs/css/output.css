@@ -1018,6 +1018,18 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   text-decoration-line: none;
 }
 
+.progress {
+  position: relative;
+  width: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  overflow: hidden;
+  height: 0.5rem;
+  border-radius: var(--rounded-box, 1rem);
+  background-color: var(--fallback-bc,oklch(var(--bc)/0.2));
+}
+
 .swap {
   position: relative;
   display: inline-grid;
@@ -1208,6 +1220,49 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   }
 }
 
+.progress::-moz-progress-bar {
+  border-radius: var(--rounded-box, 1rem);
+  background-color: currentColor;
+}
+
+.progress:indeterminate {
+  --progress-color: var(--fallback-bc,oklch(var(--bc)/1));
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--progress-color) -1%,
+    var(--progress-color) 10%,
+    transparent 10%,
+    transparent 90%
+  );
+  background-size: 200%;
+  background-position-x: 15%;
+  animation: progress-loading 5s ease-in-out infinite;
+}
+
+.progress::-webkit-progress-bar {
+  border-radius: var(--rounded-box, 1rem);
+  background-color: transparent;
+}
+
+.progress::-webkit-progress-value {
+  border-radius: var(--rounded-box, 1rem);
+  background-color: currentColor;
+}
+
+.progress:indeterminate::-moz-progress-bar {
+  background-color: transparent;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--progress-color) -1%,
+    var(--progress-color) 10%,
+    transparent 10%,
+    transparent 90%
+  );
+  background-size: 200%;
+  background-position-x: 15%;
+  animation: progress-loading 5s ease-in-out infinite;
+}
+
 @keyframes progress-loading {
   50% {
     background-position-x: -115%;
@@ -1276,6 +1331,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   margin-top: 0px;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -1289,12 +1348,20 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   right: 0px;
 }
 
-.-bottom-0 {
-  bottom: -0px;
+.-bottom-10 {
+  bottom: -2.5rem;
 }
 
 .-top-40 {
   top: -10rem;
+}
+
+.end-0 {
+  inset-inline-end: 0px;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .left-1\/2 {
@@ -1319,6 +1386,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .-z-10 {
   z-index: -10;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .col-span-2 {
@@ -1364,6 +1435,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .aspect-\[1155\/678\] {
   aspect-ratio: 1155/678;
+}
+
+.h-2 {
+  height: 0.5rem;
 }
 
 .max-h-12 {
@@ -1459,6 +1534,11 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.bg-success {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-su,oklch(var(--su)/var(--tw-bg-opacity, 1)));
 }
 
 .bg-gradient-to-tr {
@@ -1661,7 +1741,18 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   }
 }
 
+@media (min-width: 768px) {
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
+
 @media (min-width: 1024px) {
+  .lg\:right-0 {
+    right: 0px;
+  }
+
   .lg\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -1669,6 +1760,10 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
+  }
+
+  .lg\:mt-9 {
+    margin-top: 2.25rem;
   }
 
   .lg\:w-1\/2 {
@@ -1691,5 +1786,15 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   .lg\:py-56 {
     padding-top: 14rem;
     padding-bottom: 14rem;
+  }
+
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .lg\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 }

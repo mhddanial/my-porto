@@ -11,13 +11,32 @@
         body {
             font-family: "Poppins";
         }
+        .animate-scroll {
+            animation: scroll 2s infinite
+              linear forwards alternate;
+        }
+
+        @keyframes scroll {
+            from {
+                transform: translateX(-100%);
+            }
+
+            to {
+                transform: translateX(0);
+            }
+        }
     </style>
     <script>document.documentElement.classList.add('js')</script>
 </head>
     <body data-theme="night">
+        <!-- Navbar -->
+        <div
+            id="scroll-progress"
+            class="bg-success h-2 fixed end-0 left-0 z-50">
+        </div>
         <!-- Background -->
         <div class="relative isolate px-6 lg:px-8">
-            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true" data-theme="dark">
+            <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true" data-theme="night">
                 <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-10 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
             </div>
             <!-- Hero Section -->
@@ -25,8 +44,8 @@
                 <div class="container">
                     <div class="flex flex-wrap">  
                         <div class="w-full self-center px-5 lg:w-1/2">
-                            <h1 class="text-base font-semibold text-success">Hello Everyone👋 I am <span class="block font-bold text-white text-4xl mt-2">Muhammad Danial</span></h1>
-                            <h2 class="font-medium text-slate-400 text-lg mb-5">Informatics Engineering Student.</h2>
+                            <h1 class="text-base font-semibold text-success md:text-xl">Hello Everyone👋 I am <span class="block font-bold text-white text-4xl mt-2 lg:text-5xl">Muhammad Danial</span></h1>
+                            <h2 class="font-medium text-slate-400 text-lg mb-5 lg:text-2xl">Informatics Engineering Student.</h2>
                             <p class="text-base leading-relaxed">I am a student majoring in informatics engineering who is currently studying at <span class="font-semibold text-white font-serif">Polytechnic Negeri Batam.</span>
                                 I have a good interest and ability in the technology industry in the field of <span class="font-semibold text-warning">Networking</span> and <span class="text-accent font-semibold">Apps Programming.</span></p>
                             <div class="flex">
@@ -37,11 +56,11 @@
                             </div>
                         </div>
                         <div class="w-full self-end px-4 lg:w-1/2">
-                            <div class="relative mt-10">
-                                <img src="../docs/img/remove.png" alt="Gambar" class="max-w-full mx-auto">
-                                <span class="absolute -bottom-0 -z-10 left-1/2 -translate-x-1/2">
+                            <div class="relative mt-10 lg:mt-9 lg:right-0">
+                                <img src="../docs/img/hero.png" alt="Gambar" class="max-w-full mx-auto">
+                                <span class="absolute -bottom-10 -z-10 left-1/2 -translate-x-1/2">
                                     <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#9EF0F0" d="M31.2,-32.1C43.7,-18.7,59.3,-9.4,65.4,6.1C71.5,21.5,68.1,43.1,55.6,57.6C43.1,72.2,21.5,79.7,2.1,77.6C-17.3,75.5,-34.6,63.8,-34.7,49.2C-34.8,34.6,-17.6,17.3,-14.8,2.8C-12,-11.7,-23.6,-23.5,-23.5,-36.9C-23.5,-50.3,-11.7,-65.3,-1.2,-64.2C9.4,-63,18.7,-45.5,31.2,-32.1Z" transform="translate(100 100)" />
+                                        <path fill="#37CDBE" d="M52.7,-42.6C67.5,-23.5,78.1,-1.6,73.6,16.2C69,34,49.3,47.7,29.5,54.7C9.7,61.7,-10.2,62.1,-26.6,54.5C-43.1,46.9,-56.1,31.3,-63.7,10.9C-71.2,-9.6,-73.4,-34.9,-61.8,-53.3C-50.3,-71.7,-25.2,-83.3,-3.1,-80.8C18.9,-78.3,37.9,-61.8,52.7,-42.6Z" transform="translate(100 100) scale(1.1)" />
                                     </svg>
                                 </span>
                             </div>
@@ -79,5 +98,15 @@
                 </aside>
         </footer>
     <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+    <script>
+        window.addEventListener("scroll", function () {
+    const scrollableHeight =
+      document.documentElement.scrollHeight - window.innerHeight;
+    const scrolled = window.scrollY;
+    const progressBar = document.getElementById("scroll-progress");
+    const progress = (scrolled / scrollableHeight) * 100;
+    progressBar.style.width = progress + "%";
+  });
+    </script>
 </body>
 </html>
