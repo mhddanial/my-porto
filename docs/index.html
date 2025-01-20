@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="night">
+<html lang="en" data-theme="night" class="scroll-smooth focus:scroll-auto">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,10 +10,6 @@
     <style>
         body {
             font-family: "Poppins";
-        }
-        .animate-scroll {
-            animation: scroll 2s infinite
-            linear forwards alternate;
         }
         @keyframes scroll {
             from {
@@ -27,35 +23,45 @@
     </style>
     <script>document.documentElement.classList.add('js')</script>
 </head>
-    <body class="scroll-smooth">
+    <body>
         <!-- scroll -->
         <!-- <div
             id="scroll-progress"
             class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-2 fixed end-0 left-0 z-50">
         </div> -->
         <!-- Navbar -->
-        <div class="navbar backdrop-blur-sm opacity-100 z-50 fixed w-full shadow-2xl">
+        <nav data-theme="night" class="navbar z-10 fixed w-full shadow-2xl">
             <div class="container">
                 <div class="navbar-start">
                     <a class="btn btn-ghost text-2xl font-semibold text-slate-50">Dann.</a>
                 </div>
                 <div class="navbar-end hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
-                        <li class="hover:text-success hover:font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200"><a href="">Home</a></li>
-                        <li class="hover:text-success hover:font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200"><a href="#about">About</a></li>
-                        <li class="hover:text-success hover:font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200"><a href="">Project</a></li>
-                        <li class="hover:text-success hover:font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200"><a href="">Gallery</a></li>
-                        <li class="hover:text-success hover:font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200"><a href="">Contact</a></li>
+                        <li class="hover:text-success hover:font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class="hover:text-success hover:font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="hover:text-success hover:font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200">
+                            <a href="#">Project</a>
+                        </li>
+                        <li class="hover:text-success hover:font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200">
+                            <a href="#">Gallery</a>
+                        </li>
+                        <li class="hover:text-success hover:font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200">
+                            <a href="#">Contact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </div>
+        </nav>
         <!-- Hero Section -->
         <section id="home" class="pt-10">
             <div class="container mt-10">
-                <div class="flex flex-wrap">  
+                <div class="flex flex-wrap"> 
                     <div class="w-full self-center px-5 lg:w-1/2 md:w-1/2">
-                        <h1 class="text-base font-semibold text-success md:text-xl">Hello Everyone👋 I am <span class="block font-bold text-white text-3xl mt-2 sm:text-base lg:text-4xl">Muhammad Danial</span></h1>
+                        <h1 class="text-base font-semibold text-success md:text-lg">Hello Everyone👋 I am <span class="block font-bold text-white text-3xl mt-2 sm:text-base lg:text-4xl md:text-2xl">Muhammad Danial</span></h1>
                         <h2 class="font-medium text-slate-400 text-md mb-5 lg:text-lg">Informatics Engineering Student.</h2>
                         <p class="text-base leading-relaxed md:text-md">I am a student majoring in informatics engineering who is currently studying at <span class="font-semibold text-white font-serif">Polytechnic Negeri Batam.</span>
                             I have a good interest and ability in the technology industry in the field of <span class="font-semibold text-warning">Networking</span> and <span class="text-accent font-semibold">Apps Programming.</span></p>
@@ -82,78 +88,18 @@
         <!-- Hero Section End -->
         
         <!-- About Section -->
-        <section id="about" class="py-24 relative xl:mr-0 lg:mr-5 mr-0">
-            <div class="w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
-                <div class="w-full justify-start items-center xl:gap-12 gap-10 grid lg:grid-cols-2 grid-cols-1">
-                    <div class="w-full flex-col justify-center lg:items-start items-center gap-10 inline-flex">
-                        <div class="w-full flex-col justify-center items-start gap-8 flex">
-                            <div class="flex-col justify-start lg:items-start items-center gap-4 flex">
-                                <div class="w-full flex-col justify-start lg:items-start items-center gap-3 flex">
-                                    <h2
-                                        class="text-success text-4xl font-bold font-manrope leading-normal lg:text-start text-center">
-                                        About Me</h2>
-                                    <p
-                                        class="text-gray-500 text-base font-normal leading-relaxed lg:text-start text-center">
-                                        Our achievement story is a testament to teamwork and perseverance. Together, we've
-                                        overcome challenges, celebrated victories, and created a narrative of progress and
-                                        success.</p>
-                                </div>
-                            </div>
-                            <div class="w-full flex-col justify-center items-start gap-6 flex">
-                                <div class="w-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1">
-                                    <div
-                                        class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
-                                        <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">33+ Years</h4>
-                                        <p class="text-gray-500 text-base font-normal leading-relaxed">Influencing Digital
-                                            Landscapes Together</p>
-                                    </div>
-                                    <div
-                                        class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
-                                        <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">125+ Projects
-                                        </h4>
-                                        <p class="text-gray-500 text-base font-normal leading-relaxed">Excellence Achieved
-                                            Through Success</p>
-                                    </div>
-                                </div>
-                                <div class="w-full h-full justify-start items-center gap-8 grid md:grid-cols-2 grid-cols-1">
-                                    <div
-                                        class="w-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
-                                        <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">26+ Awards</h4>
-                                        <p class="text-gray-500 text-base font-normal leading-relaxed">Our Dedication to
-                                            Innovation Wins Understanding</p>
-                                    </div>
-                                    <div
-                                        class="w-full h-full p-3.5 rounded-xl border border-gray-200 hover:border-gray-400 transition-all duration-700 ease-in-out flex-col justify-start items-start gap-2.5 inline-flex">
-                                        <h4 class="text-gray-900 text-2xl font-bold font-manrope leading-9">99% Happy
-                                            Clients</h4>
-                                        <p class="text-gray-500 text-base font-normal leading-relaxed">Mirrors our Focus on
-                                            Client Satisfaction.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button
-                            class="sm:w-fit w-full group px-3.5 py-2 bg-indigo-50 hover:bg-indigo-100 rounded-lg shadow-[0px_1px_2px_0px_rgba(16,_24,_40,_0.05)] transition-all duration-700 ease-in-out justify-center items-center flex">
-                            <span
-                                class="px-1.5 text-indigo-600 text-sm font-medium leading-6 group-hover:-translate-x-0.5 transition-all duration-700 ease-in-out">Read
-                                More</span>
-                            <svg class="group-hover:translate-x-0.5 transition-all duration-700 ease-in-out"
-                                xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                                <path d="M6.75265 4.49658L11.2528 8.99677L6.75 13.4996" stroke="#4F46E5" stroke-width="1.6"
-                                    stroke-linecap="round" stroke-linejoin="round" />
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="w-full lg:justify-start justify-center items-start flex">
-                        <div
-                            class="sm:w-[564px] w-full sm:h-[646px] h-full sm:bg-gray-100 rounded-3xl sm:border border-gray-200 relative">
-                            <img class="sm:mt-5 sm:ml-5 w-full h-full rounded-3xl object-cover"
-                                src="https://pagedone.io/asset/uploads/1717742431.png" alt="about Us image" />
-                        </div>
+        <section id="about" class="relative xl:mr-0 lg:mr-5 mr-0">
+            <div class="mx-auto max-w-7xl py-10 sm:px-6 sm:py-32 lg:px-8">
+                <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+                    <h2 class="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">Boost your productivity. Start using our app today.</h2>
+                    <p class="mt-6 text-pretty text-lg/8 text-gray-300">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.</p>
+                    <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
+                        <a href="#" class="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
+                        <a href="#" class="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
                     </div>
                 </div>
             </div>
-        </section>
+        </section>    
 
         <!-- About Section End -->
 
