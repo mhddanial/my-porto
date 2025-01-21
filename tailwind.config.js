@@ -10,7 +10,7 @@ module.exports = {
   content: {
     relative: true,
     transform: (content) => content.replace(/taos:/g, ''),
-    files : ['./docs/**/*.{html,js}']
+    files : ['./**/*.{html,js}']
   },
   theme: {
     container: {
