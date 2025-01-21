@@ -39,7 +39,6 @@
                         <li class="hover:text-success hover:font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200">
                             <a href="#home">Home</a>
                         </li>
-                            
                             <div class="dropdown dropdown-hover">
                                 <div tabindex="0" role="button">
                                     <li class="hover:text-success hover:font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200">
@@ -48,8 +47,8 @@
                                     </li>
                                 </div>
                                 <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-48 p-2 shadow">
-                                    <li><a>Skills</a></li>
-                                    <li><a>Experience</a></li>
+                                    <li><a href="#">Skills</a></li>
+                                    <li><a href="#">Experience</a></li>
                                 </ul>
                             </div>
                         <li class="hover:text-success hover:font-semibold transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-200">
@@ -63,30 +62,47 @@
                         </li>
                     </ul>
                 </div>
-                <div class="lg:hidden">
-                    <label class="swap swap-rotate">
+                <div class="dropdown dropdown-bottom dropdown-end lg:hidden">
+                    <label tabindex="0" role="button" class="swap swap-rotate">
                         <!-- this hidden checkbox controls the state -->
-                        <input type="checkbox" />
-                        <svg
+                        <input id="hamburger" name="hamburger" type="checkbox"/>
+                            <svg
                             class="swap-off fill-current"
                             xmlns="http://www.w3.org/2000/svg"
                             width="32"
                             height="32"
                             viewBox="0 0 512 512">
                             <path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z" />
-                        </svg>
-                        <!-- close icon -->
-                        <svg
-                            class="swap-on fill-current"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="32"
-                            height="32"
-                            viewBox="0 0 512 512">
-                            <polygon
-                                points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
-                        </svg>
+                            </svg>
+                            <!-- close icon -->
+                            <svg
+                                class="swap-on fill-current"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="32"
+                                height="32"
+                                viewBox="0 0 512 512">
+                                <polygon
+                                    points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49" />
+                            </svg>
                     </label>
-                </div>
+                    <ul id="nav-menu" tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow hidden border border-blue-200">
+                        <li><a href="#home">Home</a></li>
+                            <div class="collapse bg-base-200">
+                                <input type="checkbox" />
+                                <div class="collapse-title">
+                                    About
+                                </div>
+                                <div class="collapse-content">
+                                <li><a href="#about">About Me</a></li>
+                                <li><a href="#skills">Skilss</a></li>
+                                <li><a href="#experience">Experience</a></li>
+                                </div>
+                            </div>
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>     
             </div>  
         </nav>
         <!-- Hero Section -->
@@ -123,8 +139,8 @@
         <!-- About Section -->
         <section id="about" class="relative xl:mr-0 lg:mr-5 mr-0">
             <div class="container">
-                <div class="mx-auto max-w-7xl py-10 sm:px-6 sm:py-32 lg:px-8">
-                    <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left">
+                <div class="mx-auto max-w-7xl py-10 sm:px-6 sm:py-32">
+                    <div class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-20 lg:text-left">
                         <h2 class="text-base font-semibold text-success md:text-lg">ABOUT ME</h2>
                         <h2 class="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">Boost your productivity. Start using our app today.</h2>
                         <p class="mt-6 text-pretty text-lg/8 text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. In libero quos odit velit asperiores molestias facere, illum maiores? Porro, aliquam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium cumque asperiores atque nobis sint earum! Esse, ad nemo deleniti quos, nobis fugiat voluptatibus facilis cum vel sint, voluptates quisquam harum.</p>
