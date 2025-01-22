@@ -8644,6 +8644,10 @@ html:has(.drawer-open.drawer-open) {
   margin-right: auto;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -8809,6 +8813,10 @@ html:has(.drawer-open.drawer-open) {
 
 .max-w-md {
   max-width: 28rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .flex-1 {
@@ -9818,6 +9826,11 @@ html:has(.drawer-open.drawer-open) {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
 }
 
+.bg-accent-content {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-ac,oklch(var(--ac)/var(--tw-bg-opacity, 1)));
+}
+
 .bg-base-100 {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity, 1)));
@@ -10014,8 +10027,25 @@ html:has(.drawer-open.drawer-open) {
   padding-bottom: 0.625rem;
 }
 
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
 .pt-10 {
   padding-top: 2.5rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
+.pt-36 {
+  padding-top: 9rem;
 }
 
 .text-left {
@@ -10091,6 +10121,11 @@ html:has(.drawer-open.drawer-open) {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .text-lg\/8 {
