@@ -2395,8 +2395,16 @@ details.collapse summary::-webkit-details-marker {
   display: none;
 }
 
+.h-10 {
+  height: 2.5rem;
+}
+
 .h-2 {
   height: 0.5rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .w-48 {
@@ -2607,6 +2615,11 @@ details.collapse summary::-webkit-details-marker {
 .py-24 {
   padding-top: 6rem;
   padding-bottom: 6rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pt-10 {
