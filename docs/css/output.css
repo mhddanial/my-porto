@@ -1362,6 +1362,15 @@ html.js :where([class*="taos:"]:not(.taos-init)) {
   text-decoration-line: none;
 }
 
+.mask {
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -2395,16 +2404,16 @@ details.collapse summary::-webkit-details-marker {
   display: none;
 }
 
-.h-10 {
-  height: 2.5rem;
+.h-16 {
+  height: 4rem;
 }
 
 .h-2 {
   height: 0.5rem;
 }
 
-.w-10 {
-  width: 2.5rem;
+.w-16 {
+  width: 4rem;
 }
 
 .w-48 {
@@ -2617,17 +2626,16 @@ details.collapse summary::-webkit-details-marker {
   padding-bottom: 6rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .pt-10 {
   padding-top: 2.5rem;
 }
 
 .pt-14 {
   padding-top: 3.5rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .pt-2 {
@@ -2873,6 +2881,11 @@ details.collapse summary::-webkit-details-marker {
   .sm\:py-32 {
     padding-top: 8rem;
     padding-bottom: 8rem;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .sm\:text-4xl {
