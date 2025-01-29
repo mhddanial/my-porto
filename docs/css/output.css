@@ -2603,6 +2603,11 @@ details.collapse summary::-webkit-details-marker {
   margin-right: auto;
 }
 
+.my-3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -2960,10 +2965,6 @@ details.collapse summary::-webkit-details-marker {
   line-height: 1.5rem;
 }
 
-.font-black {
-  font-weight: 900;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -3077,6 +3078,10 @@ details.collapse summary::-webkit-details-marker {
 
 .delay-150 {
   transition-delay: 150ms;
+}
+
+.delay-200 {
+  transition-delay: 200ms;
 }
 
 .\!duration-\[0ms\] {
