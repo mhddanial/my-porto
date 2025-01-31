@@ -1,4 +1,4 @@
-// Scroll bar progress
+    // Scroll bar progress
         window.addEventListener("scroll", function () {
         const scrollableHeight =
         document.documentElement.scrollHeight - window.innerHeight;
