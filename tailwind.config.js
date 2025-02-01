@@ -34,7 +34,7 @@ module.exports = {
     require('taos/plugin')
   ],
   daisyui: {
-    themes: ["night", "dark", "cyberpunk"],
+    themes: ["night", "dark", "light", "cyberpunk"],
   },
 }
 
