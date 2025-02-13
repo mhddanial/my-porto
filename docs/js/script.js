@@ -1,4 +1,5 @@
-    // Scroll bar progress
+
+// Scroll bar progress
         window.addEventListener("scroll", function () {
         const scrollableHeight =
         document.documentElement.scrollHeight - window.innerHeight;
@@ -14,6 +15,3 @@
         hamburger.addEventListener("click", function () {
         navMenu.classList.toggle("hidden");
     });
-
-
-    
